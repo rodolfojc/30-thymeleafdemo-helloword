@@ -3,11 +3,13 @@
 
 <head>
 	<title>Thymeleaf Demo</title>
+	<!-- REFERENCE THE CSS FILE -->
+	<link rel="stylesheet" th:href = "@{/css/myStyle.css}" />
 </head>
 
 <body>
 	
-	<p th:text = "'Time in the server is ' + ${theDate}" />
+	<p th:text = "'Time in the server is ' + ${theDate}" class = "time"/>
 
 </body>
 
